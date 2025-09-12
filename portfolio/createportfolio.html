@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Himanshu — Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="decor" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">H</div>
+        <div>
+          <h1>Himanshu</h1>
+          <p>Product designer & front-end tinkerer</p>
+        </div>
+      </div>
+
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+        <button class="btn" id="themeToggle" title="Toggle theme">🌙</button>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="panel intro">
+        <h2>Design that tells a story — clean, fast and human.</h2>
+        <p>I'm a product designer focused on interfaces, motion and delightful micro-interactions. I craft pixel-perfect UI and implement them with clean HTML & CSS.</p>
+
+        <div class="cta-row">
+          <a class="cta-primary btn" href="#contact">Let's talk</a>
+          <a class="btn" href="#projects">See work</a>
+        </div>
+
+        <div class="profile">
+          <div class="avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="avatar"></div>
+          <div class="meta">
+            <strong></strong>
+            <small>Available for freelance · based in India</small>
+          </div>
+        </div>
+      </div>
+
+      <aside class="panel" aria-labelledby="skills">
+        <h3 id="skills">Selected Skills</h3>
+        <div class="skills">
+          <div class="skill">UI Design</div>
+          <div class="skill">Interaction</div>
+          <div class="skill">HTML & CSS</div>
+          <div class="skill">Prototyping</div>
+          <div class="skill">Figma / XD</div>
+          <div class="skill">Accessibility</div>
+        </div>
+
+        <div class="small-actions">
+          <a class="btn" href="#projects">View projects</a>
+          <a class="btn" href="#" id="resumeLink">Resume</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="projects">
+      <div class="section-title">
+        <h2>Featured Projects</h2>
+        <p class="muted">A selection of recent UI projects and experiments.</p>
+      </div>
+
+      <div class="grid" id="projectsGrid">
+        <!-- card -->
+        <article class="card" data-title="Aurora Dashboard" data-desc="A minimal analytics dashboard with live charts and custom theming." data-img="">
+          <div class="thumb">Aurora</div>
+          <div class="content">
+            <h3>Aurora Dashboard</h3>
+            <p class="muted">Analytics product UI with clean typography and motion-first interactions.</p>
+            <div class="tags">
+              <span class="tag">Dashboard</span>
+              <span class="tag">Design System</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-title="Echo Mobile" data-desc="A mobile banking prototype emphasizing clarity and speed." data-img="">
+          <div class="thumb">Echo</div>
+          <div class="content">
+            <h3>Echo Mobile</h3>
+            <p class="muted">Mobile-first flows focused on trust and accessibility.</p>
+            <div class="tags">
+              <span class="tag">Mobile</span>
+              <span class="tag">Fintech</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-title="Canvas Studio" data-desc="A creative toolkit for generating social assets with templates and motion." data-img="">
+          <div class="thumb">Canvas</div>
+          <div class="content">
+            <h3>Canvas Studio</h3>
+            <p class="muted">Experimentation with templates, export flows and delightful defaults.</p>
+            <div class="tags">
+              <span class="tag">Creative</span>
+              <span class="tag">UX</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="section-title">
+        <h2>About</h2>
+        <p class="muted">A short story about how I work.</p>
+      </div>
+
+      <div class="about">
+        <div class="panel">
+          <p style="margin-top:0">I design interfaces with a performance-first mindset. My process blends research, wireframing and iterative prototyping. I care about accessibility, crisp typography, and seamless motion.</p>
+          <p class="muted">Toolset: Figma, HTML, CSS, JS, Git, Node</p>
+        </div>
+
+        <div style="width:320px">
+          <div class="panel">
+            <h4>Selected tools</h4>
+            <ul class="muted">
+              <li>Design Systems</li>
+              <li>Prototyping</li>
+              <li>Responsive Layouts</li>
+              <li>Performance & Accessibility</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p class="muted">Say hi — I respond within a few business days.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="panel" id="contactForm">
+          <label for="name">Name</label>
+          <input id="name" required>
+          <label for="email">Email</label>
+          <input id="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" required></textarea>
+          <div class="form-row">
+            <button class="btn cta-primary" type="submit">Send message</button>
+          </div>
+        </form>
+
+        <div class="panel">
+          <h3 style="margin-top:0">Availability</h3>
+          <p class="muted">Open for freelance projects and short-term collaborations.</p>
+
+          <div class="links">
+            <a class="btn" href="#">Dribbble</a>
+            <a class="btn" href="#">Behance</a>
+            <a class="btn" href="#">GitHub</a>
+            <a class="btn" href="#">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © Himanshu — Built with HTML & CSS
+    </footer>
+  </div>
+
+  <!-- modal -->
+  <div class="modal" id="projectModal" aria-hidden="true">
+    <div class="modal-inner">
+      <button class="close" id="closeModal">✕</button>
+      <div class="modal-body">
+        <div class="modal-left">
+          <h2 id="modalTitle">Title</h2>
+          <p id="modalDesc" class="muted">Description</p>
+          <div class="modal-actions">
+            <a class="btn" href="#" id="modalDemo">Live demo</a>
+            <a class="btn" href="#" id="modalCode">Source</a>
+          </div>
+        </div>
+        <div class="modal-right">
+          <div class="modal-img" id="modalImg"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</body>
+</html>
